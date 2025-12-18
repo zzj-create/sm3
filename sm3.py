@@ -164,7 +164,7 @@ if __name__ == "__main__":
         # 验证结果（仅对比Python和OpenSSL的结果）
         is_match = python_sm3 == openssl_sm3
         status = "✅ 结果一致" if is_match else "❌ 结果不一致"
-        all_pass &= is_match
+        all_pass &= is_matchgi
 
         print(f"\n测试消息: {msg_name}")
         print(f"Python SM3:   {python_sm3}")
